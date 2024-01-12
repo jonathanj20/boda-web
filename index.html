@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="tailwind.css" />
+		<title>Boda</title>
+	</head>
+	<body>
+		<main>
+			<section>
+				<div class="space-y-4 mb-5">
+					<label for="namePerson" class="block text-center">Ingrese su primer nombre y su primer apellido</label>
+					<div class="space-y-3 sm:flex sm:justify-center sm:items-center sm:space-y-0">
+						<input type="text" placeholder="Ingrese su nombre" class="border-2 border-gray-500 outline-none block mx-auto sm:mx-2" id="namePerson"/>
+						<button class="block mx-auto border-2 border-gray-500 rounded px-2 py-1 sm:mx-2" id="invitationsBtn">Aceptar</button>
+					</div>
+				</div>
+				<div class="border-4 border-gray-300 w-8/12 mx-auto space-y-4 p-3 text-center">
+					<h2>invitación para</h2>
+					<p id="username">Nombre</p>
+					<p>Adultos - <span id="adults">0</span></p>
+					<p class="hidden" id="paragraphChildren">Niños - <span id="kid">0</span></p>
+				</div>
+			</section>
+		</main>
+		<script src="invitations.js"></script>
+	</body>
+</html>
